@@ -4,7 +4,6 @@ import { getFirestore, doc, getDoc, updateDoc } from 'firebase/firestore';
 import '../firebaseConfig';
 
 const EditBlog = ({ postId }) => {
-  const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
   const [updatedTitle, setUpdatedTitle] = useState('');
   const [updatedAuthor, setUpdatedAuthor] = useState('');
@@ -18,7 +17,6 @@ const EditBlog = ({ postId }) => {
       const postDoc = await getDoc(postRef);
       
       if (postDoc.exists()) {
-        setPost(postDoc.data());
         setUpdatedTitle(postDoc.data().title);
         setUpdatedAuthor(postDoc.data().author);
         setUpdatedContent(postDoc.data().content);
@@ -29,7 +27,7 @@ const EditBlog = ({ postId }) => {
     };
 
     fetchData();
-  }, [postId]);
+  }, [blogId, postId]);
 
   const handleUpdate = async () => {
     const db = getFirestore();
