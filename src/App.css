@@ -1,38 +1,71 @@
-.App {
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define a global font */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333; /* default text color */
+  background-color: #f4f4f4; /* light background color */
+}
+
+/* Hyperlink Styles */
+a {
+  text-decoration: none;
+  color: #007bff; /* default link color */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styles */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* Layout Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Common Elements */
+header, footer {
+  padding: 20px 0;
+  background-color: #282c34;
+  color: #ffffff;
+}
+
+header h1, footer h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Utility Classes */
+.text-center {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mt-10 {
+  margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mb-10 {
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Dark Mode Global */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
 }

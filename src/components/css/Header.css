@@ -1,0 +1,59 @@
+/* Header.css */
+
+/* Header.css */
+
+/* Default light mode styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+nav a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #e6e6e6;
+}
+
+nav a.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+
+
+/* If you have a logo or title for your website, you might want to style it too. 
+   Assuming you place it before the links in your nav:
+
+nav > div:first-child {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+*/
+
+/* If you wish to display the nav links vertically on smaller screens, 
+   you can use a media query:
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
+*/
+
