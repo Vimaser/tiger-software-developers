@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate,
-  useLocation,
 } from "react-router-dom";
 import './firebaseConfig';
 import { 
@@ -30,7 +28,7 @@ import {
   import './App.css'; 
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode] = useState(false);
 
   return (
     <Router>
