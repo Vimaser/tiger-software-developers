@@ -25,7 +25,7 @@ const Login = () => {
         // Login was successful
         setLoginStatus("success");
         setError(null);
-        const user = userCredential.user;
+        /* const user = userCredential.user; */
 
         navigate("/");
       }

@@ -5,7 +5,7 @@ import "../firebaseConfig";
 
 const EditPortfolio = () => {
   const { itemId } = useParams();
-  const [item, setItem] = useState(null);
+/*   const [item, setItem] = useState(null); */
   const [loading, setLoading] = useState(true);
 
   const [projectName, setProjectName] = useState("");
@@ -28,7 +28,7 @@ const EditPortfolio = () => {
 
         if (itemDoc.exists()) {
           const data = itemDoc.data();
-          setItem(data);
+          /* setItem(data); */
           setProjectName(data.projectName || "");
           setDescription(data.description || "");
           setLink(data.link || "");

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./css/Home.css";
-import Logout from "./Logout";
+/* import Logout from "./Logout"; */
 import "./css/darkMode.css";
 import tiger from "../img/tiger.png";
 
