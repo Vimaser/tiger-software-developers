@@ -73,7 +73,7 @@ const Header = () => {
           </>
         ) : (
           <NavLink to="/login" activeClassName="active">
-            Login
+            
           </NavLink>
         )}
         <button onClick={toggleDarkMode}>{darkMode ? "Light" : "Dark"}</button>

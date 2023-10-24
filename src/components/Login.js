@@ -41,6 +41,8 @@ const Login = () => {
   return (
     <div className="login">
       <h2>Login</h2>
+      <p>Administration Only</p>
+      <br/>
       {error && <p className="error">{error}</p>}
       {loginStatus === "success" && (
         <p className="success">Login was successful!</p>
