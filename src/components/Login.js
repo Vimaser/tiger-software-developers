@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import "../firebaseConfig";
 import { useNavigate } from 'react-router-dom';
+import "./css/darkMode.css";
+import "./css/Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
