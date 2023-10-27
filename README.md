@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### Dev Thoughts
+
+Ran into an interesting issue, the darkmode will not return to light on Home if another route is in darkMode. Will have to go back and troubleshoot later. I feel like the issue is how I did the css and my naming convention. I thought that if I link the .css file to the .js file I could reuse classNames. However, that doesn't seem to be the case. Still, my goal with these projects has been more concerned with improving speed and accuracy. Pushing out more projects while getting freelance work. I feel like I've made considerable progress and I'm very happy in my improvement with my back end abilities. Even if it is using a mock back end such as firebase, I'm developing a better understanding. Becoming more well-rounded as a developer is my next goal... Well honestly it's getting more freelance work to pay for this! Right now I can't justify it as anything other than a hobby until I get more contracts.
