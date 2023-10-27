@@ -1,11 +1,6 @@
-/* Header.css */
-
-/* Header.css */
-
-/* Default light mode styles */
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #f2f2f2;
     padding: 10px 20px;
@@ -13,25 +8,6 @@ nav {
     font-family: 'Arial', sans-serif;
 }
 
-nav a {
-    color: #333;
-    margin: 0 10px;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-nav a:hover {
-    background-color: #e6e6e6;
-}
-
-nav a.active {
-    background-color: #007bff;
-    color: #fff;
-}
-
-/* Hamburger styles */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -46,63 +22,43 @@ nav a.active {
     transition: 0.4s;
 }
 
+.menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align the menu items */
+}
+
+.menu-items a, .menu-items button {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.menu-items a:hover, .menu-items button:hover {
+    background-color: #e6e6e6;
+}
+
+.menu-items a.active, .menu-items button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
 /* Mobile view styles */
 @media only screen and (max-width: 768px) {
-    nav a, nav button {
-        display: none;  /* hide all navigation links and button */
+    .menu-items {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Hide menu items by default in mobile view */
     }
 
     .hamburger {
         display: flex;
     }
 
-    /* For opened mobile menu */
-    nav.open a, nav.open button {
-        display: block;
-        margin: 10px 0;
-    }
-}
-
-.menu-items {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Mobile view styles */
-@media only screen and (max-width: 768px) {
-    .menu-items {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
     nav.open .menu-items {
-        display: flex;
+        display: flex; /* Show menu items when mobile menu is open */
     }
 }
-
-
-/* If you have a logo or title for your website, you might want to style it too. 
-   Assuming you place it before the links in your nav:
-
-nav > div:first-child {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-*/
-
-/* If you wish to display the nav links vertically on smaller screens, 
-   you can use a media query:
-
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        margin: 5px 0;
-    }
-}
-*/
-
