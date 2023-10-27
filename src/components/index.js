@@ -17,3 +17,4 @@ export { default as DeleteServices } from "./DeleteServices";
 export { default as CreatePortfolio } from "./CreatePortfolio";
 export { default as CreateServices } from "./CreateServices";
 export { default as Header } from "./Header";
+export { default as Footer } from "./Footer";

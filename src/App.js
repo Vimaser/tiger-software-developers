@@ -23,6 +23,7 @@ import {
   DeletePortfolio,
   CreatePortfolio,
   DeleteServices,
+  Footer,
   CreateServices,
   Header } from "./components";
   import './App.css'; 
@@ -53,6 +54,7 @@ function App() {
         <Route path="/createportfolio" element={<CreatePortfolio />} />
         <Route path="/createservices" element={<CreateServices />} />
       </Routes>
+      <Footer />
     </ Router>
   );
 }
