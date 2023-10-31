@@ -11,6 +11,7 @@ const EditServices = () => {
   const [description, setDescription] = useState("");
   const [duration, setDuration] = useState("");
   const [price, setPrice] = useState("");
+  const [tier, setTier] = useState("");
 
   useEffect(() => {
     const fetchService = async () => {
@@ -26,6 +27,7 @@ const EditServices = () => {
           setDescription(data.description || "");
           setDuration(data.duration || "");
           setPrice(data.price || "");
+          setTier(data.tier || "");
         } else {
           console.error("No such document!");
         }
@@ -49,6 +51,7 @@ const EditServices = () => {
         description,
         duration,
         price,
+        tier,
       });
 
       alert("Service updated successfully!");
@@ -94,6 +97,14 @@ const EditServices = () => {
             type="text"
             value={price}
             onChange={(e) => setPrice(e.target.value)}
+          />
+        </div>
+        <div>
+          <label>Tier:</label>
+          <input
+            type="text"
+            value={tier}
+            onChange={(e) => setTier(e.target.value)}
           />
         </div>
         <button type="submit">Update Service</button>

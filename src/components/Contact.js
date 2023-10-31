@@ -8,6 +8,7 @@ import "./css/Contact.css";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
@@ -18,12 +19,14 @@ const Contact = () => {
     await addDoc(collection(db, "messages"), {
       name,
       email,
+      phoneNumber,
       message,
       timestamp: new Date(),
     });
 
     setName("");
     setEmail("");
+    setPhoneNumber("");
     setMessage("");
     setSubmitted(true);
   };
@@ -54,6 +57,15 @@ const Contact = () => {
             />
           </div>
           <div>
+            <label>Phone Number:</label>
+            <input
+              type="tel"
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
+              required
+            />
+          </div>
+          <div>
             <label>Message (Tell us about yourself!):</label>
             <textarea
               value={message}
@@ -64,6 +76,10 @@ const Contact = () => {
           </div>
         </form>
       )}
+       {/* Display the contact number */}
+       <div className="contact-number">
+        <p>Contact us directly at: <span>1-225-678-1294</span></p>
+      </div>
     </div>
   );
 };

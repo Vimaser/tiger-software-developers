@@ -9,6 +9,7 @@ const CreateServices = () => {
     const [description, setDescription] = useState("");
     const [duration, setDuration] = useState("");
     const [price, setPrice] = useState("");
+    const [tier, setTier] = useState("");
     const navigate = useNavigate();
 
     const handleCreateService = async (e) => {
@@ -19,7 +20,8 @@ const CreateServices = () => {
             serviceName,
             description,
             duration,
-            price
+            price,
+            tier
         };
 
         try {
@@ -54,6 +56,12 @@ const CreateServices = () => {
                 <label>
                     Price:
                     <input type="text" value={price} onChange={e => setPrice(e.target.value)} required />
+                </label>
+                <br />
+                <br />
+                <label>
+                    Tier:
+                    <input type="text" value={price} onChange={e => setTier(e.target.value)} required />
                 </label>
                 <br />
                 <button type="submit">Add Service</button>

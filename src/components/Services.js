@@ -57,8 +57,11 @@ const Services = ({ darkMode }) => {
               <p>
                 <strong>Duration:</strong> {service.duration}
               </p>
-              <p>
+              {/* <p>
                 <strong>Price:</strong> ${service.price}
+              </p> */}
+              <p>
+                <strong>Service:</strong> {service.tier}
               </p>
               {isLoggedIn && (
                 <div className="service-actions">
