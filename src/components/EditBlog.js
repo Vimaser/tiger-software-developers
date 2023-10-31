@@ -30,8 +30,13 @@ const EditBlog = ({ postId }) => {
   }, [blogId, postId]);
 
   const handleUpdate = async () => {
+    if (!blogId) {
+      console.error("blogId is undefined");
+      return;
+    }
+  
     const db = getFirestore();
-    const postRef = doc(db, 'posts', postId);
+    const postRef = doc(db, 'posts', blogId);
     
     await updateDoc(postRef, {
       title: updatedTitle,
@@ -41,6 +46,7 @@ const EditBlog = ({ postId }) => {
     
     alert('Post updated successfully!');
   };
+  
 
   if (loading) return <div>Loading...</div>;
 

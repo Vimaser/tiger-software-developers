@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { getFirestore, collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import '../firebaseConfig';
 
 const CreateBlog = () => {
@@ -10,16 +10,15 @@ const CreateBlog = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
     setLoading(true);
-
     const db = getFirestore();
+    const paragraphs = content.split('\n\n');
     const newPost = {
       title: title,
       author: author,
-      content: content
+      content: paragraphs,
+      createdAt: serverTimestamp(),
     };
-
     try {
       await addDoc(collection(db, 'posts'), newPost);
       alert('Post created successfully!');
@@ -30,9 +29,9 @@ const CreateBlog = () => {
       console.error('Error adding document: ', error);
       alert('Failed to create post.');
     }
-
     setLoading(false);
   };
+  
 
   return (
     <div>
