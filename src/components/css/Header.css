@@ -2,7 +2,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: #8c52ff;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
@@ -17,7 +17,7 @@ nav {
 
 .hamburger div {
     height: 3px;
-    background-color: #333;
+    background-color: #ffde59;
     margin: 2px 0;
     transition: 0.4s;
 }
@@ -29,7 +29,7 @@ nav {
 }
 
 .menu-items a, .menu-items button {
-    color: #333;
+    color: #FFFFFF;
     margin: 0 10px;
     text-decoration: none;
     padding: 8px 16px;
@@ -38,12 +38,12 @@ nav {
 }
 
 .menu-items a:hover, .menu-items button:hover {
-    background-color: #e6e6e6;
+    background-color: #ffde59; 
 }
 
 .menu-items a.active, .menu-items button.active {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #ffffff;
+    color: rgb(225, 0, 255);
 }
 
 /* Mobile view styles */
