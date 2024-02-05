@@ -19,6 +19,9 @@ function Home() {
   };
 
   useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    setShowVideo(!isMobile);
+    
     window.addEventListener("click", skipVideo);
     window.addEventListener("keydown", skipVideo);
 
@@ -53,7 +56,7 @@ function Home() {
       {/* Hero Section */}
       <section className="hero-section">
         <img src={tiger} alt="Tiger" className="tiger-image" />
-        <h1>Welcome to Tiger Software Developers</h1>
+        <h1>Tiger Software Developers LLC</h1>
         <p>Building Robust Web Solutions</p>
         {/*  <Link to="/contact" className="btn btn-primary">Contact Us</Link> */}
       </section>

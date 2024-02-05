@@ -10,6 +10,8 @@ const Portfolio = ({ darkMode }) => {
   const [items, setItems] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  /* make the text hidden until mouse over! */
+
   useEffect(() => {
     const auth = getAuth();
     const unsubscribe = onAuthStateChanged(auth, (user) => {

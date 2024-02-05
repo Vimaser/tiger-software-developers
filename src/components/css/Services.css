@@ -1,4 +1,6 @@
 /* Layout and Visual Improvements for Services */
+
+/* Change background to tiger! */
 .services-container {
     padding: 40px;
     background: url('./background.gif') no-repeat center center fixed;
