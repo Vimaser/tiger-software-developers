@@ -12,39 +12,41 @@ body {
   line-height: 1.5;
   color: #333; /* default text color */
   background-color: #f4f4f4; /* light background color */
+  min-height: 100vh; /* Ensures minimum height of viewport */
+  display: flex;
+  flex-direction: column;
 }
 
+/* Footer styles */
 footer {
-  position: fixed; /* Fix the footer to the bottom */
-  left: 0;
-  bottom: 0;
   width: 100%;
   padding: 20px 0;
   background-color: #282c34;
   color: #ffffff;
   text-align: center;
+  /* Footer will now be at the end of content naturally */
 }
 
 /* Mobile First Styles */
 @media only screen and (max-width: 768px) {
-    body {
-        font-size: 15px;
-    }
+  body {
+    font-size: 15px;
+  }
 
-    .container {
-        padding: 0 10px;
-    }
-    
-    /* Additional mobile specific styles can go here */
+  .container {
+    padding: 0 10px;
+  }
+  
+  /* Additional mobile specific styles can go here */
 }
 
 /* For even smaller devices like iPhone 5/SE */
 @media only screen and (max-width: 320px) {
-    body {
-        font-size: 14px;
-    }
+  body {
+    font-size: 14px;
+  }
 
-    /* Adjust styles specifically for very small devices here */
+  /* Adjust styles specifically for very small devices here */
 }
 
 /* Hyperlink Styles */
@@ -71,6 +73,7 @@ button {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  flex: 1; /* Allows container to expand and fill available space */
 }
 
 /* Common Elements */
@@ -107,10 +110,10 @@ header h1, footer h1 {
 
 /* For Tablets */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Adjust styles specifically for tablet devices here */
+  /* Adjust styles specifically for tablet devices here */
 }
 
 /* For Large Desktops */
 @media only screen and (min-width: 1201px) {
-    /* Adjust styles specifically for large desktops here */
+  /* Adjust styles specifically for large desktops here */
 }
