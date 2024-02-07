@@ -12,6 +12,11 @@
     margin-bottom: 40px;
 }
 
+.portfolio-header h2 {
+    color: white;
+    font-weight: bolder;
+}
+
 .portfolio-item {
     background-color: #ffffff; /* White background for each item */
     border-radius: 5px;
