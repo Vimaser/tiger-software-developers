@@ -3,7 +3,8 @@
 .portfolio-container {
     font-family: 'Arial', sans-serif;
     padding: 20px;
-    background-color: #f4f4f4; /* Light gray background */
+    background: url('./TIGERSOFTWARE.gif') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .portfolio-header {
@@ -87,6 +88,8 @@
     padding: 20px;
     transition: transform 0.3s;
     overflow: hidden;
+    cursor: pointer;
+    position: relative;
 }
 
 .portfolio-card:hover {
@@ -113,3 +116,22 @@
 .delete-link {
     color: red;
 }
+
+.portfolio-details {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the background as needed */
+    color: white;
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 100%; /* Set a maximum height */
+  }
+  
+  .portfolio-card:hover .portfolio-details,
+  .portfolio-card .portfolio-details.active {
+    display: block;
+  }

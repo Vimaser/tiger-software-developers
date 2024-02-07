@@ -110,14 +110,10 @@ function Home() {
       <section className="services-section">
         <h2>Our Services</h2>
         <div className="service-item">
-          <h3>Web Development</h3>
-          <p>
-            Building responsive and dynamic websites tailored to your needs.
-          </p>
+          <h3>Web Development: Building responsive and dynamic websites tailored to your needs.</h3>
         </div>
         <div className="service-item">
-          <h3>SEO Optimization</h3>
-          <p>Ensuring your website ranks high on search engines.</p>
+          <h3>SEO Optimization: Ensuring your website ranks high on search engines.</h3>
         </div>
         {/* ... Add more services as needed */}
       </section>

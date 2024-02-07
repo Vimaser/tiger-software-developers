@@ -14,6 +14,17 @@ body {
   background-color: #f4f4f4; /* light background color */
 }
 
+footer {
+  position: fixed; /* Fix the footer to the bottom */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #282c34;
+  color: #ffffff;
+  text-align: center;
+}
+
 /* Mobile First Styles */
 @media only screen and (max-width: 768px) {
     body {
