@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import "../firebaseConfig";
 import "./css/darkMode.css";
-import "./css/darkMode.css";
 import "./css/Contact.css";
 
 const Contact = () => {
@@ -71,14 +70,15 @@ const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
-            />{" "}
+            />
             <button type="submit">Submit</button>
           </div>
         </form>
       )}
-       {/* Display the contact number */}
-       <div className="contact-number">
-        <p>Contact us directly at: <span>1-225-678-1294</span></p>
+      <div className="contact-number">
+        <p>
+          Contact us directly at: <span>1-225-678-1294</span>
+        </p>
       </div>
     </div>
   );
