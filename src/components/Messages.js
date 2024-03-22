@@ -37,6 +37,7 @@ const Messages = () => {
               <strong>Phone Number:</strong> {message.phoneNumber}<br />
               <strong>TimeSent:</strong> {message.timestamp ? new Date(message.timestamp.seconds * 1000).toLocaleString() : 'N/A'}<br />
               <strong>Message:</strong> {message.message}<br />
+              <strong>Adseen:</strong> {message.adSeen}<br />
               <Link to={`/deletemessages/${message.id}`}>Delete</Link>
             </li>
           ))}

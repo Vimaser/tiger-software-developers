@@ -3,15 +3,16 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
+  useLocation,
 } from "react-router-dom";
-import './firebaseConfig';
-import { 
+import "./firebaseConfig";
+import {
   Home,
   Blog,
   Contact,
   Messages,
   Portfolio,
-  EditPortfolio, 
+  EditPortfolio,
   Login,
   Logout,
   Services,
@@ -25,16 +26,33 @@ import {
   DeleteServices,
   Footer,
   CreateServices,
-  Header } from "./components";
-  import './App.css'; 
+  Header,
+  ContactUsMusician,
+  ContactUsPageant
+} from "./components";
+import "./App.css";
 
 function App() {
   const [darkMode] = useState(false);
-  
+
+  const HeaderExcluder = ({ children }) => {
+    const location = useLocation();
+    const excludedPaths = ["/contactusmusician", "/contactuspageant"];
+
+    if (excludedPaths.includes(location.pathname)) {
+      return null;
+    }
+
+    return children;
+  };
 
   return (
     <Router>
-      <Header />
+      <HeaderExcluder>
+        {" "}
+        <Header />
+      </HeaderExcluder>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
@@ -53,10 +71,12 @@ function App() {
         <Route path="/deleteportfolio/:id" element={<DeletePortfolio />} />
         <Route path="/DeleteService/:id" element={<DeleteServices />} />
         <Route path="/createportfolio" element={<CreatePortfolio />} />
+        <Route path="/contactusmusician" element={<ContactUsMusician />} />
+        <Route path="/contactuspageant" element={<ContactUsPageant />} />
         <Route path="/createservices" element={<CreateServices />} />
       </Routes>
       <Footer />
-    </ Router>
+    </Router>
   );
 }
 

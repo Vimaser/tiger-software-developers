@@ -18,3 +18,5 @@ export { default as CreatePortfolio } from "./CreatePortfolio";
 export { default as CreateServices } from "./CreateServices";
 export { default as Header } from "./Header";
 export { default as Footer } from "./Footer";
+export { default as ContactUsMusician } from "./ContactUsMusician";
+export { default as ContactUsPageant } from "./ContactUsPageant";
