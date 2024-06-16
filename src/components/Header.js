@@ -6,10 +6,10 @@ import "./css/darkMode.css";
 
 const Header = () => {
   const [user, setUser] = useState(null);
-  const [darkMode, setDarkMode] = useState(false);
+  //const [darkMode, setDarkMode] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const toggleDarkMode = () => {
+/*   const toggleDarkMode = () => {
     setDarkMode((prevMode) => {
       if (!prevMode) {
         document.body.setAttribute("data-dark", "true");
@@ -18,18 +18,18 @@ const Header = () => {
       }
       return !prevMode;
     });
-  };
+  }; */
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
   useEffect(() => {
-    if (darkMode) {
+ /*    if (darkMode) {
       document.body.setAttribute("data-dark", "true");
     } else {
       document.body.removeAttribute("data-dark");
-    }
+    } */
 
     const auth = getAuth();
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -37,7 +37,7 @@ const Header = () => {
     });
 
     return () => unsubscribe();
-  }, [darkMode]);
+  }, /* [darkMode] */);
 
   return (
     <nav className={mobileMenuOpen ? "open" : ""}>
@@ -76,7 +76,7 @@ const Header = () => {
             
           </NavLink>
         )}
-        <button onClick={toggleDarkMode}>{darkMode ? "Light" : "Dark"}</button>
+       {/*  <button onClick={toggleDarkMode}>{darkMode ? "Light" : "Dark"}</button> */}
       </div>
     </nav>
   );

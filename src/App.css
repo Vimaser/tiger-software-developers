@@ -10,9 +10,9 @@ body {
   font-family: 'Arial', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #333; /* default text color */
-  background-color: #f4f4f4; /* light background color */
-  min-height: 100vh; /* Ensures minimum height of viewport */
+  color: #333;
+  background: linear-gradient(to right, #e6e6ff, #e6e3b4);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
