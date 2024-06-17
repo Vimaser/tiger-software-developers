@@ -2,7 +2,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #8c52ff;
+    background: linear-gradient(to top, #8c52ff, #ffde59);
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;

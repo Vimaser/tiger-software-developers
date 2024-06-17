@@ -22,6 +22,21 @@ function Home() {
           <span></span>
         </div>
       </section>
+      
+      <section className="services-section">
+        <h2>Our Services</h2>
+        <img src={actoFrogged} alt="ActoFrogged" className="services-image" />
+        <p className="services-description">
+          We offer a comprehensive range of services including Web Development,
+          Email Campaigns & Autoresponders, Analytics & Reporting, Inventory
+          Management, POS Integration, Social Media Management, SEO
+          Optimization, Facebook Pixel Implementation, Google Ads Management,
+          Google Indexing Services, Membership & Subscription Services,
+          E-commerce Solutions, Professional Logo Design, Video Production &
+          Editing, Google Business Listing Optimization, Newsletters & Email
+          Automation, Customer Management Systems, and much more!
+        </p>
+      </section>
 
       <section className="about-section">
         <h2>About Us</h2>
@@ -79,20 +94,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="services-section">
-        <h2>Our Services</h2>
-        <img src={actoFrogged} alt="ActoFrogged" className="services-image" />
-        <p className="services-description">
-          We offer a comprehensive range of services including Web Development,
-          Email Campaigns & Autoresponders, Analytics & Reporting, Inventory
-          Management, POS Integration, Social Media Management, SEO
-          Optimization, Facebook Pixel Implementation, Google Ads Management,
-          Google Indexing Services, Membership & Subscription Services,
-          E-commerce Solutions, Professional Logo Design, Video Production &
-          Editing, Google Business Listing Optimization, Newsletters & Email
-          Automation, Customer Management Systems, and much more!
-        </p>
-      </section>
+
 
       <section className="testimonials-section">
         <h2>What Our Clients Say</h2>
