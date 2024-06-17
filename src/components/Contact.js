@@ -33,11 +33,13 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <h2>Contact Us</h2>
-      <h2>
+      <br/>
+      <h2 class="contact-email">
         <a href="mailto:tigersoftwaredevelopers@gmail.com">
           tigersoftwaredevelopers@gmail.com
         </a>
       </h2>
+
       {submitted ? (
         <p>Thanks for reaching out! We'll get back to you soon.</p>
       ) : (
@@ -85,7 +87,7 @@ const Contact = () => {
           Contact us directly at: <span>1-225-678-1294</span>
         </p>
       </div>
-      <br/>
+      <br />
     </div>
   );
 };

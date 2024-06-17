@@ -5,15 +5,24 @@ import "./css/darkMode.css";
 import tiger from "../img/tiger.png";
 import claws from "../img/claws1.png";
 import claws2 from "../img/claws2.png";
+import actoFrogged from "../img/actoFrogged.png";
 
 function Home() {
   return (
     <div>
-      <section className="hero-section">
+      <section id="hero-section" className="hero-section">
+        <div className="overlay"></div>
         <img src={tiger} alt="Tiger" className="tiger-image" />
-        <h1>Tiger Software Developers LLC</h1>
+        <h1 className="animated-text">Tiger Software Developers LLC</h1>
         <p>Building Robust Web Solutions</p>
+        <a href="#cta-section" className="btn btn-primary">
+          Get Started
+        </a>
+        <div className="scroll-indicator">
+          <span></span>
+        </div>
       </section>
+
       <section className="about-section">
         <h2>About Us</h2>
         <div className="about-content">
@@ -71,62 +80,87 @@ function Home() {
       </section>
 
       <section className="services-section">
-  <h2>Our Services</h2>
-  <p className="services-description">
-    We offer a comprehensive range of services including Web Development, Email Campaigns & Autoresponders, Analytics & Reporting, Inventory Management, POS Integration, Social Media Management, SEO Optimization, Facebook Pixel Implementation, Google Ads Management, Google Indexing Services, Membership & Subscription Services, E-commerce Solutions, Professional Logo Design, Video Production & Editing, Google Business Listing Optimization, Newsletters & Email Automation, Customer Management Systems, and much more!
-  </p>
-</section>
-
+        <h2>Our Services</h2>
+        <img src={actoFrogged} alt="ActoFrogged" className="services-image" />
+        <p className="services-description">
+          We offer a comprehensive range of services including Web Development,
+          Email Campaigns & Autoresponders, Analytics & Reporting, Inventory
+          Management, POS Integration, Social Media Management, SEO
+          Optimization, Facebook Pixel Implementation, Google Ads Management,
+          Google Indexing Services, Membership & Subscription Services,
+          E-commerce Solutions, Professional Logo Design, Video Production &
+          Editing, Google Business Listing Optimization, Newsletters & Email
+          Automation, Customer Management Systems, and much more!
+        </p>
+      </section>
 
       <section className="testimonials-section">
         <h2>What Our Clients Say</h2>
-        <blockquote>
+        <blockquote className="testimonial">
+          <p>"...I love, love, love the Website."</p>
+          <cite>- Dan Broe</cite>
           <a
             href="http://danbroemusic.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="btn"
           >
-            <p>"...I love, love, love the Website."</p>
-            <cite>- Dan Broe</cite>
+            Visit Website
           </a>
+        </blockquote>
+        <blockquote className="testimonial">
+          <p>
+            "I now have a website that you can go check out. Just click the
+            link above to visit the website!! And if you’re looking to start
+            your own website, contact Tiger Software Developers!!"
+          </p>
+          <cite>- Aaron Justice</cite>
           <a
             href="http://aaron-justice-music.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="btn"
           >
-            <p>
-              "I now have a website that you can go check out. Just click the
-              link above to visit the website!! And if you’re looking to start
-              your own website, contact Tiger Software Developers!!"
-            </p>
-            <cite>- Aaron Justice</cite>
+            Visit Website
           </a>
+        </blockquote>
+        <blockquote className="testimonial">
+          <p>
+            "Tiger Software Developers transformed our online presence! Highly
+            recommend them!"
+          </p>
+          <cite>- FRC</cite>
           <a
             href="http://frc-louisiana.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="btn"
           >
-            <p>
-              "Tiger Software Developers transformed our online presence! Highly
-              recommend them!"
-            </p>
-            <cite>- FRC</cite>
+            Visit Website
           </a>
+        </blockquote>
+        <blockquote className="testimonial">
+          <p>"They went above and beyond our expectations!"</p>
+          <cite>- The Flea Market of Louisiana</cite>
           <a
             href="https://thefleamarketoflouisiana.com/"
             target="_blank"
             rel="noopener noreferrer"
+            className="btn"
           >
-            <p>"They went above and beyond our expectations!"</p>
-            <cite>- The Flea Market of Louisiana</cite>
+            Visit Website
           </a>
+        </blockquote>
+        <blockquote className="testimonial">
+          <p>"You guys are awesome!"</p>
+          <cite>- Uncle Chess</cite>
           <a
             href="https://unclechess.com/"
             target="_blank"
             rel="noopener noreferrer"
+            className="btn"
           >
-            <p>"You guys are awesome!"</p>
-            <cite>- Uncle Chess</cite>
+            Visit Website
           </a>
         </blockquote>
       </section>

@@ -78,3 +78,5 @@ Ran into an interesting issue, the darkmode will not return to light on Home if 
 # June 16th, 2024 update
 
 Massive CSS overhaul for better UI/UX still working on it and there's a lot more to do. Cut the intro video.
+
+Still more work needed. Good place to stop for the day-- especially since I just had surgery on my hand :( ... I'm thinking about setting the testimonials in a carousel. Trying to be as UI/UX friendly without it looking generic. ranName generating bgImgSections (only have one). Site really-really needed this, but this type of artistic stuff has never been my strong point--but I'm always willing to improve!
