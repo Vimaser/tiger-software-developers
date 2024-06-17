@@ -15,9 +15,9 @@ function Home() {
         <img src={tiger} alt="Tiger" className="tiger-image" />
         <h1 className="animated-text">Tiger Software Developers LLC</h1>
         <p>Building Robust Web Solutions</p>
-        <a href="#cta-section" className="btn btn-primary">
-          Get Started
-        </a>
+        <Link to="/contact" className="btn btn-primary">
+          Get in Started
+        </Link>
         <div className="scroll-indicator">
           <span></span>
         </div>
@@ -166,9 +166,9 @@ function Home() {
       </section>
 
       <section className="cta-section">
-        <h2>Ready to start your project?</h2>
-        <Link to="/contact" className="btn btn-success">
-          Get in Touch
+
+        <Link to="/contact" className="btn">
+       <h2>Ready to start your project?</h2>
         </Link>
       </section>
     </div>
