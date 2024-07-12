@@ -10,13 +10,17 @@ import actoFrogged from "../img/actoFrogged.png";
 function Home() {
   return (
     <div>
+      <div className="notification-bar">
+        Please excuse our site, we're in the process of updating it.
+      </div>
+
       <section id="hero-section" className="hero-section">
         <div className="overlay"></div>
         <img src={tiger} alt="Tiger" className="tiger-image" />
         <h1 className="animated-text">Tiger Software Developers LLC</h1>
         <p>Building Robust Web Solutions</p>
         <Link to="/contact" className="btn btn-primary">
-          Get in Started
+          Get Started
         </Link>
         <div className="scroll-indicator">
           <span></span>
@@ -94,8 +98,6 @@ function Home() {
         </div>
       </section>
 
-
-
       <section className="testimonials-section">
         <h2>What Our Clients Say</h2>
         <blockquote className="testimonial">
@@ -168,9 +170,8 @@ function Home() {
       </section>
 
       <section className="cta-section">
-
         <Link to="/contact" className="btn">
-       <h2>Ready to start your project?</h2>
+          <h2>Ready to start your project?</h2>
         </Link>
       </section>
     </div>

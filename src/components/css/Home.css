@@ -4,6 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Gugi&family=Inter:wght@100..900&display=swap');
 
 /* General Styles */
+
+.notification-bar {
+    background-color: #ffcc00;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+
+
 .home-container {
     font-family: 'Roboto', sans-serif;
     padding: 20px;
