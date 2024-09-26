@@ -80,3 +80,7 @@ Ran into an interesting issue, the darkmode will not return to light on Home if 
 Massive CSS overhaul for better UI/UX still working on it and there's a lot more to do. Cut the intro video.
 
 Still more work needed. Good place to stop for the day-- especially since I just had surgery on my hand :( ... I'm thinking about setting the testimonials in a carousel. Trying to be as UI/UX friendly without it looking generic. ranName generating bgImgSections (only have one). Site really-really needed this, but this type of artistic stuff has never been my strong point--but I'm always willing to improve!
+
+# September 26th, 2024 UPDATE
+
+New site and new domain. Took the dashes out and I have a complete rebuild using Next.js. I still have the native react build for now under the old domain, but once the new year rolls around I'm not purchasing the old domain and moving everything toward the new site/domain. I'm only adding a link at the top of the page to the new site. It's been a wild ride and I feel like I've come a long way, but there's always something new to learn in this field. Looking back I cringe at some of the things I did both coding wise and CSS wise--but it's also cool to see the progress. I'm exicted because I have a lot of big contracts coming up! To anyone reading this, never stop coding!

@@ -2,7 +2,7 @@
 .blog-container {
     font-family: Arial, sans-serif;
     margin: 0 auto;
-    max-width: 800px; /* Set a max width for readability */
+    max-width: 800px;
     padding: 40px 20px;
     line-height: 1.6;
 }

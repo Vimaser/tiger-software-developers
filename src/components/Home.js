@@ -10,9 +10,12 @@ import actoFrogged from "../img/actoFrogged.png";
 function Home() {
   return (
     <div>
-      <div className="notification-bar">
-        Please excuse our site, we're in the process of updating it.
-      </div>
+      <a
+        href="https://www.tigersoftwaredevelopers.com"
+        className="notification-bar"
+      >
+        COME CHECK OUT OUR NEW WEBSITE!
+      </a>
 
       <section id="hero-section" className="hero-section">
         <div className="overlay"></div>
@@ -26,7 +29,7 @@ function Home() {
           <span></span>
         </div>
       </section>
-      
+
       <section className="services-section">
         <h2>Our Services</h2>
         <img src={actoFrogged} alt="ActoFrogged" className="services-image" />
@@ -114,9 +117,9 @@ function Home() {
         </blockquote>
         <blockquote className="testimonial">
           <p>
-            "I now have a website that you can go check out. Just click the
-            link above to visit the website!! And if you’re looking to start
-            your own website, contact Tiger Software Developers!!"
+            "I now have a website that you can go check out. Just click the link
+            above to visit the website!! And if you’re looking to start your own
+            website, contact Tiger Software Developers!!"
           </p>
           <cite>- Aaron Justice</cite>
           <a
