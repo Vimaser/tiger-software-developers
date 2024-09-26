@@ -10,12 +10,12 @@ import actoFrogged from "../img/actoFrogged.png";
 function Home() {
   return (
     <div>
-      <a
+      <div className="notification-bar"><a
         href="https://www.tigersoftwaredevelopers.com"
-        className="notification-bar"
+        
       >
         COME CHECK OUT OUR NEW WEBSITE!
-      </a>
+      </a></div>
 
       <section id="hero-section" className="hero-section">
         <div className="overlay"></div>
